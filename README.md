@@ -7,4 +7,5 @@
 
 
 ## ScreenShots: 
-![Test Image 1](Screen Shots/Screenshot_20210402-114443_Brain_Trainer.png)
+
+
