@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <Button
+        android:id="@+id/showQuestionCount"
+        android:layout_width="163dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/showround"
+        android:fontFamily="@font/amiko"
+        android:gravity="center"
+        android:textColor="#FFFEFC"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nextQuestionButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/op3" />
+
+    <Button
+        android:id="@+id/nextQuestionButton"
+        android:layout_width="163dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/nextbutton"
+        android:fontFamily="@font/amiko"
+        android:lineSpacingExtra="8sp"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/op4"
+        app:layout_constraintVertical_bias="0.542" />
+
+    <TextView
+        android:id="@+id/qut_text_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/questionbar"
+        android:fontFamily="@font/walter_turncoat"
+        android:gravity="center"
+        android:textColor="#FF6D00"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/timmer_textButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/op1"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/op4"
+        android:fontFamily="@font/walter_turncoat"
+        android:gravity="center"
+        android:onClick="tapCard"
+        android:tag="0"
+        android:textColor="#FF6D00"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qut_text_Button" />
+
+    <TextView
+        android:id="@+id/op2"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/op4"
+        android:fontFamily="@font/walter_turncoat"
+        android:gravity="center"
+        android:onClick="tapCard"
+        android:tag="1"
+        android:textColor="#FF6D00"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toEndOf="@+id/op1"
+        app:layout_constraintTop_toBottomOf="@+id/qut_text_Button" />
+
+    <TextView
+        android:id="@+id/op3"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/op4"
+        android:fontFamily="@font/walter_turncoat"
+        android:gravity="center"
+        android:onClick="tapCard"
+        android:tag="2"
+        android:textColor="#FF6D00"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/op1" />
+
+    <TextView
+        android:id="@+id/op4"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/op4"
+        android:fontFamily="@font/walter_turncoat"
+        android:gravity="center"
+        android:onClick="tapCard"
+        android:tag="3"
+        android:textColor="#FF6D00"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/op3"
+        app:layout_constraintTop_toBottomOf="@+id/op2" />
+
+    <TextView
+        android:id="@+id/timmer_textButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/timer"
+        android:fontFamily="@font/amiko"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/gameLevelShow"
+        android:layout_width="116dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="36dp"
+        android:background="@drawable/showingamelevel"
+        android:fontFamily="@font/amiko"
+        android:gravity="center"
+        android:textColor="#FF6D00"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timmer_textButton" />
+
+</android.support.constraint.ConstraintLayout>

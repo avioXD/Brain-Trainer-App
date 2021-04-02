@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F36722">
+
+    <ImageView
+        android:id="@+id/scoreBoardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/levelcard_1" />
+
+    <Button
+        android:id="@+id/goHome"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="44dp"
+
+        android:background="@drawable/home_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreBoardview"
+        app:layout_constraintVertical_bias="0.684" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="260dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/walter_turncoat"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toBottomOf="@+id/scoreBoardview"
+        app:layout_constraintEnd_toEndOf="@+id/scoreBoardview"
+        app:layout_constraintStart_toStartOf="@+id/scoreBoardview"
+        app:layout_constraintTop_toTopOf="@+id/scoreBoardview"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/nextLevel"
+        android:layout_width="257dp"
+        android:layout_height="79dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/nextlevel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toEndOf="@+id/goHome"
+        app:layout_constraintTop_toBottomOf="@+id/scoreBoardview"
+        app:layout_constraintVertical_bias="0.674" />
+</android.support.constraint.ConstraintLayout>

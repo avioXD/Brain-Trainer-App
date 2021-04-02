@@ -1,0 +1,33 @@
+package com.example.braintrainer;
+
+import android.app.Application;
+
+public class GlobalClass extends Application {
+// level started and finish
+    private boolean isStart =false , isFinish=false;
+
+    public boolean getIsFinish(){
+        return isFinish;
+    }
+    public void setFinish(boolean set){
+        isFinish=set;
+    }
+
+    public boolean getIsStart(){
+        return isStart;
+    }
+    public void setStart(boolean set){
+        isStart=set;
+    }
+///
+    private int result;
+
+    public void setResult(int rs){
+        result=rs;
+    }
+    public int getResult(){
+        return result;
+    }
+
+
+}

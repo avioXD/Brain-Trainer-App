@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/levelBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/levelcard" />
+
+    <Button
+        android:id="@+id/GoButton"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/gobutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/levelBoard" />
+
+    <TextView
+        android:id="@+id/levelNo"
+        android:layout_width="136dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/walter_turncoat"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="#FF6D00"
+        android:textSize="150sp"
+        app:layout_constraintEnd_toEndOf="@+id/levelBoard"
+        app:layout_constraintStart_toStartOf="@+id/levelBoard"
+        app:layout_constraintTop_toTopOf="@+id/levelBoard" />
+</android.support.constraint.ConstraintLayout>
